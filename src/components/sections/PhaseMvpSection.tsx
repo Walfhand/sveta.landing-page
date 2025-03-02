@@ -83,6 +83,23 @@ export default function PhaseMvpSection() {
                 </li>
               </ul>
             </div>
+            <div className="bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-8 shadow-lg md:col-span-2">
+              <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6">Sécurité et Confidentialité</h3>
+              <ul className="space-y-3 sm:space-y-4">
+                <li className="flex items-start">
+                  <span className="mr-2 sm:mr-3 text-green-500">✓</span>
+                  <span className="text-sm sm:text-base">Option d'hébergement local des modèles IA dans votre infrastructure</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 sm:mr-3 text-green-500">✓</span>
+                  <span className="text-sm sm:text-base">Traitement sécurisé des données sensibles</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 sm:mr-3 text-green-500">✓</span>
+                  <span className="text-sm sm:text-base">Conformité avec les normes de sécurité des données</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

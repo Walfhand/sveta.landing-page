@@ -10,7 +10,7 @@ export default function FeaturesSection() {
             Une suite complète d'outils pour optimiser votre processus de développement
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
           {[
             {
               title: "Analyse de Documents",
@@ -26,6 +26,11 @@ export default function FeaturesSection() {
               title: "Agents IA Spécialisés",
               description: "Agents Business et Technique utilisant des modèles IA avancés comme DeepSeek pour des réponses contextualisées.",
               icon: "🤖",
+            },
+            {
+              title: "Hébergement Local",
+              description: "Option d'utiliser des modèles IA hébergés dans votre infrastructure pour garantir la confidentialité de vos données sensibles.",
+              icon: "🔒",
             },
           ].map((feature, index) => (
             <div
