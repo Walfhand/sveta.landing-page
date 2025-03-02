@@ -1,18 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import BackgroundAnimation from "@/components/BackgroundAnimation";
+import NewsletterForm from "../NewsletterForm";
 
-interface HeroSectionProps {
-  email: string;
-  setEmail: (email: string) => void;
-  handleSubmit: (e: React.FormEvent) => void;
-}
-
-export default function HeroSection({
-  email,
-  setEmail,
-  handleSubmit,
-}: HeroSectionProps) {
+export default function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -64,9 +55,11 @@ export default function HeroSection({
                   : "translate-y-10 opacity-0"
               }`}
             >
-              Imaginez un monde où vous n'avez plus besoin d'attendre les réponses de votre PM. 
-              Où les tickets de bug sont résolus plus rapidement grâce à une IA qui localise précisément le problème. 
-              SVETA est votre assistant qui comprend votre code et votre contexte business.
+              Imaginez un monde où vous n&apos;avez plus besoin d&apos;attendre
+              les réponses de votre PM. Où les tickets de bug sont résolus plus
+              rapidement grâce à une IA qui localise précisément le problème.
+              SVETA est votre assistant qui comprend votre code et votre
+              contexte business.
             </p>
 
             <div
@@ -80,39 +73,27 @@ export default function HeroSection({
                 <div className="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 text-left">
                   <div className="text-xl mb-2">🔍</div>
                   <h3 className="font-semibold mb-1">Analyse de bugs</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Localisation précise des bugs dans votre code</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    Localisation précise des bugs dans votre code
+                  </p>
                 </div>
                 <div className="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 text-left">
                   <div className="text-xl mb-2">💡</div>
                   <h3 className="font-semibold mb-1">Contexte business</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Réponses immédiates à vos questions business</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    Réponses immédiates à vos questions business
+                  </p>
                 </div>
                 <div className="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 text-left">
                   <div className="text-xl mb-2">⚡</div>
                   <h3 className="font-semibold mb-1">Développement accéléré</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Plus de temps à coder, moins à chercher</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    Plus de temps à coder, moins à chercher
+                  </p>
                 </div>
               </div>
 
-              <form
-                onSubmit={handleSubmit}
-                className="max-w-md mx-auto flex flex-col sm:flex-row gap-4"
-              >
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Entrez votre email"
-                  className="flex-1 px-4 sm:px-6 py-3 sm:py-4 rounded-full border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 dark:bg-gray-800/50 backdrop-blur-sm transition-all duration-300 hover:shadow-lg"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="relative px-8 py-4 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 text-white font-medium transition-all duration-300 hover:shadow-lg hover:scale-105 hover:from-purple-500 hover:to-blue-500 focus:outline-none focus:ring-2 focus:ring-purple-500"
-                >
-                  <span className="relative z-10">Accès anticipé</span>
-                </button>
-              </form>
+              <NewsletterForm />
             </div>
           </div>
         </div>

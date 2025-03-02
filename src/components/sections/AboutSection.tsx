@@ -1,6 +1,9 @@
 export default function AboutSection() {
   return (
-    <section id="apropos" className="min-h-screen py-16 sm:py-24 flex items-center bg-white dark:bg-black">
+    <section
+      id="apropos"
+      className="min-h-screen py-16 sm:py-24 flex items-center bg-white dark:bg-black"
+    >
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8 sm:mb-12">
@@ -8,8 +11,10 @@ export default function AboutSection() {
               Libérez votre potentiel de développement
             </h2>
             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-              Combien de temps passez-vous à attendre des réponses de votre équipe ? À chercher des informations dans la documentation ? 
-              À débugger des problèmes complexes ? SVETA change la donne en devenant votre partenaire de développement intelligent.
+              Combien de temps passez-vous à attendre des réponses de votre
+              équipe ? À chercher des informations dans la documentation ? À
+              débugger des problèmes complexes ? SVETA change la donne en
+              devenant votre partenaire de développement intelligent.
             </p>
           </div>
 
@@ -19,8 +24,10 @@ export default function AboutSection() {
                 Fini les blocages business
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                Plus besoin d'attendre des heures pour une réponse de votre PM ou de l'équipe business. 
-                SVETA analyse vos documents et comprend le contexte pour vous donner des réponses précises, immédiatement.
+                Plus besoin d&apos;attendre des heures pour une réponse de votre
+                PM ou de l&apos;équipe business. SVETA analyse vos documents et
+                comprend le contexte pour vous donner des réponses précises,
+                immédiatement.
               </p>
               <ul className="space-y-2 text-sm sm:text-base text-gray-600 dark:text-gray-400">
                 <li className="flex items-center">
@@ -43,8 +50,9 @@ export default function AboutSection() {
                 Debug intelligent
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                Les tickets de bug ne sont plus un casse-tête. SVETA analyse votre code, 
-                comprend le contexte technique et vous guide directement vers la source du problème.
+                Les tickets de bug ne sont plus un casse-tête. SVETA analyse
+                votre code, comprend le contexte technique et vous guide
+                directement vers la source du problème.
               </p>
               <ul className="space-y-2 text-sm sm:text-base text-gray-600 dark:text-gray-400">
                 <li className="flex items-center">
