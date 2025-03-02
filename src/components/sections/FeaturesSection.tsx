@@ -4,27 +4,27 @@ export default function FeaturesSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Fonctionnalités Clés
+            Un assistant qui comprend votre métier
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
-            Une suite complète d'outils pour optimiser votre processus de développement
+            SVETA analyse votre contexte business et technique pour vous fournir une assistance pertinente et immédiate
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
           {[
             {
-              title: "Analyse de Documents",
-              description: "Import et analyse automatique de documents business, analyses fonctionnelles et spécifications techniques (.pdf, .docx, .md, .txt).",
+              title: "Analyse Intelligente",
+              description: "Compréhension approfondie de vos documents business et techniques. Plus besoin d'attendre les réponses de votre équipe.",
               icon: "📄",
             },
             {
-              title: "Intégration Code",
-              description: "Connexion directe aux dépôts Git (GitHub, GitLab, Azure DevOps) avec analyse automatique du code source.",
-              icon: "💻",
+              title: "Debug Assisté",
+              description: "Localisation rapide des bugs dans votre code. SVETA analyse le contexte et vous guide vers la solution.",
+              icon: "🔍",
             },
             {
               title: "Agents IA Spécialisés",
-              description: "Agents Business et Technique utilisant des modèles IA avancés comme DeepSeek pour des réponses contextualisées.",
+              description: "Une équipe d'agents IA dédiés à vos besoins business et techniques, disponibles 24/7.",
               icon: "🤖",
             },
             {

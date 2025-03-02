@@ -39,19 +39,19 @@ export default function HeroSection({
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
               </span>
               <span className="text-xs sm:text-sm font-medium bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                Phase MVP en cours de développement
+                Votre assistant IA personnel
               </span>
             </div>
 
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 sm:mb-8 text-purple-600 dark:text-white relative">
               <span className="inline-block transform hover:scale-105 transition-transform duration-300">
-                L'Assistant IA qui
+                Développez sans
               </span>{" "}
               <span className="inline-block transform hover:scale-105 transition-transform duration-300">
-                Révolutionne
+                les blocages
               </span>{" "}
               <span className="inline-block transform hover:scale-105 transition-transform duration-300">
-                le Développement
+                habituels
               </span>
               <div className="absolute -top-8 -right-8 w-24 h-24 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-full blur-2xl" />
               <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-2xl" />
@@ -64,9 +64,9 @@ export default function HeroSection({
                   : "translate-y-10 opacity-0"
               }`}
             >
-              SVETA centralise, analyse et exploite vos documents business et
-              votre code pour fournir des réponses précises et contextualisées à
-              vos questions techniques et business.
+              Imaginez un monde où vous n'avez plus besoin d'attendre les réponses de votre PM. 
+              Où les tickets de bug sont résolus plus rapidement grâce à une IA qui localise précisément le problème. 
+              SVETA est votre assistant qui comprend votre code et votre contexte business.
             </p>
 
             <div
@@ -76,6 +76,24 @@ export default function HeroSection({
                   : "translate-y-10 opacity-0"
               }`}
             >
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto mb-8">
+                <div className="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 text-left">
+                  <div className="text-xl mb-2">🔍</div>
+                  <h3 className="font-semibold mb-1">Analyse de bugs</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Localisation précise des bugs dans votre code</p>
+                </div>
+                <div className="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 text-left">
+                  <div className="text-xl mb-2">💡</div>
+                  <h3 className="font-semibold mb-1">Contexte business</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Réponses immédiates à vos questions business</p>
+                </div>
+                <div className="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 text-left">
+                  <div className="text-xl mb-2">⚡</div>
+                  <h3 className="font-semibold mb-1">Développement accéléré</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Plus de temps à coder, moins à chercher</p>
+                </div>
+              </div>
+
               <form
                 onSubmit={handleSubmit}
                 className="max-w-md mx-auto flex flex-col sm:flex-row gap-4"
