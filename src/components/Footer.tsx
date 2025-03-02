@@ -11,56 +11,40 @@ export default function Footer() {
               Votre assistant IA pour le business et le développement
             </p>
           </div>
-          
+
           <div>
-            <h4 className="font-semibold mb-4 text-gray-900 dark:text-white">Produit</h4>
+            <h4 className="font-semibold mb-4 text-gray-900 dark:text-white">
+              Produit
+            </h4>
             <ul className="space-y-2">
               <li>
-                <a href="#fonctionnalites" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                <a
+                  href="#fonctionnalites"
+                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                >
                   Fonctionnalités
                 </a>
               </li>
               <li>
-                <a href="#apropos" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                <a
+                  href="#apropos"
+                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                >
                   À propos
                 </a>
               </li>
               <li>
-                <a href="#phase" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                <a
+                  href="#phase"
+                  className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                >
                   Phase MVP
                 </a>
               </li>
             </ul>
           </div>
-          
-          <div>
-            <h4 className="font-semibold mb-4 text-gray-900 dark:text-white">Légal</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="#confidentialite" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-                  Politique de confidentialité
-                </a>
-              </li>
-              <li>
-                <a href="#conditions" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-                  Conditions d'utilisation
-                </a>
-              </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 className="font-semibold mb-4 text-gray-900 dark:text-white">Contact</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="mailto:contact@sveta.ai" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-                  contact@sveta.ai
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
-        
+
         <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
           <p className="text-center text-gray-600 dark:text-gray-400">
             {new Date().getFullYear()} SVETA. Tous droits réservés.

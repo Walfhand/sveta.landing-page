@@ -8,7 +8,11 @@ interface HeroSectionProps {
   handleSubmit: (e: React.FormEvent) => void;
 }
 
-export default function HeroSection({ email, setEmail, handleSubmit }: HeroSectionProps) {
+export default function HeroSection({
+  email,
+  setEmail,
+  handleSubmit,
+}: HeroSectionProps) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -19,10 +23,16 @@ export default function HeroSection({ email, setEmail, handleSubmit }: HeroSecti
     <section className="relative h-screen flex items-center overflow-hidden bg-gradient-to-br from-purple-50 via-white to-blue-50 dark:from-gray-900 dark:via-black dark:to-purple-900">
       <BackgroundAnimation />
       <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white dark:from-black/0 dark:via-black/0 dark:to-black pointer-events-none" />
-      
+
       <div className="container relative mx-auto px-4 py-12 sm:py-32">
         <div className="max-w-4xl mx-auto">
-          <div className={`text-center transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+          <div
+            className={`text-center transform transition-all duration-1000 ${
+              isVisible
+                ? "translate-y-0 opacity-100"
+                : "translate-y-10 opacity-0"
+            }`}
+          >
             <div className="inline-flex items-center gap-2 mb-6 px-3 sm:px-4 py-1.5 bg-gradient-to-r from-purple-500/10 to-blue-500/10 dark:from-purple-400/10 dark:to-blue-400/10 rounded-full animate-pulse">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-600 opacity-75"></span>
@@ -47,13 +57,29 @@ export default function HeroSection({ email, setEmail, handleSubmit }: HeroSecti
               <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-2xl" />
             </h1>
 
-            <p className={`text-base sm:text-xl text-gray-600 dark:text-gray-300 mb-8 sm:mb-12 leading-relaxed transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-              SVETA centralise, analyse et exploite vos documents business et votre code 
-              pour fournir des réponses précises et contextualisées à vos questions techniques et business.
+            <p
+              className={`text-base sm:text-xl text-gray-600 dark:text-gray-300 mb-8 sm:mb-12 leading-relaxed transition-all duration-1000 delay-300 ${
+                isVisible
+                  ? "translate-y-0 opacity-100"
+                  : "translate-y-10 opacity-0"
+              }`}
+            >
+              SVETA centralise, analyse et exploite vos documents business et
+              votre code pour fournir des réponses précises et contextualisées à
+              vos questions techniques et business.
             </p>
 
-            <div className={`transition-all duration-1000 delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-              <form onSubmit={handleSubmit} className="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
+            <div
+              className={`transition-all duration-1000 delay-500 ${
+                isVisible
+                  ? "translate-y-0 opacity-100"
+                  : "translate-y-10 opacity-0"
+              }`}
+            >
+              <form
+                onSubmit={handleSubmit}
+                className="max-w-md mx-auto flex flex-col sm:flex-row gap-4"
+              >
                 <input
                   type="email"
                   value={email}
@@ -69,27 +95,6 @@ export default function HeroSection({ email, setEmail, handleSubmit }: HeroSecti
                   <span className="relative z-10">Accès anticipé</span>
                 </button>
               </form>
-
-              <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-xs sm:text-sm text-gray-500 dark:text-gray-400">
-                <div className="flex items-center gap-2">
-                  <svg className="w-4 sm:w-5 h-4 sm:h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Installation rapide</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <svg className="w-4 sm:w-5 h-4 sm:h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Support réactif</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <svg className="w-4 sm:w-5 h-4 sm:h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Mises à jour régulières</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
