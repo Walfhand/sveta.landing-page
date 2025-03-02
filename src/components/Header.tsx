@@ -11,14 +11,17 @@ export default function Header() {
         </Link>
         
         <div className="hidden md:flex items-center space-x-8">
-          <Link href="#features" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition">
-            Features
+          <Link href="#fonctionnalites" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition">
+            Fonctionnalités
           </Link>
-          <Link href="#about" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition">
-            About
+          <Link href="#apropos" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition">
+            À propos
+          </Link>
+          <Link href="#phase" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition">
+            Phase MVP
           </Link>
           <button className="px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-blue-500 text-white font-medium hover:opacity-90 transition">
-            Get Started
+            Démarrer
           </button>
         </div>
       </nav>

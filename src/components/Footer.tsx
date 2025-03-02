@@ -8,37 +8,42 @@ export default function Footer() {
               SVETA
             </h3>
             <p className="text-gray-600 dark:text-gray-400">
-              Your AI-powered business and development assistant
+              Votre assistant IA pour le business et le développement
             </p>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4 text-gray-900 dark:text-white">Product</h4>
+            <h4 className="font-semibold mb-4 text-gray-900 dark:text-white">Produit</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#features" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-                  Features
+                <a href="#fonctionnalites" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                  Fonctionnalités
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-                  About
+                <a href="#apropos" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                  À propos
+                </a>
+              </li>
+              <li>
+                <a href="#phase" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                  Phase MVP
                 </a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4 text-gray-900 dark:text-white">Legal</h4>
+            <h4 className="font-semibold mb-4 text-gray-900 dark:text-white">Légal</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#privacy" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-                  Privacy Policy
+                <a href="#confidentialite" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                  Politique de confidentialité
                 </a>
               </li>
               <li>
-                <a href="#terms" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-                  Terms of Service
+                <a href="#conditions" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                  Conditions d'utilisation
                 </a>
               </li>
             </ul>
@@ -58,7 +63,7 @@ export default function Footer() {
         
         <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
           <p className="text-center text-gray-600 dark:text-gray-400">
-            © {new Date().getFullYear()} SVETA. All rights reserved.
+            {new Date().getFullYear()} SVETA. Tous droits réservés.
           </p>
         </div>
       </div>
