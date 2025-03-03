@@ -22,6 +22,10 @@ WORKDIR /src
 COPY --from=deps /src/node_modules ./node_modules
 COPY . .
 
+# Add environment variables for build phase
+ARG NEXT_PUBLIC_SUPABASE_URL
+ARG NEXT_PUBLIC_SUPABASE_ANON_KEY
+
 # Next.js collects completely anonymous telemetry data about general usage.
 # Learn more here: https://nextjs.org/telemetry
 # Uncomment the following line in case you want to disable telemetry during the build.
