@@ -5,17 +5,8 @@
     --font-sans: var(--font-geist-sans);
     --font-mono: var(--font-geist-mono);
     
-    --background: #ffffff;
-    --foreground: #171717;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  @layer theme {
-    :root {
-      --background: #0a0a0a;
-      --foreground: #ededed;
-    }
+    --background: #0a0a0a;
+    --foreground: #ededed;
   }
 }
 
