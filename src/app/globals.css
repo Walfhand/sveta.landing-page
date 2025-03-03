@@ -10,6 +10,8 @@
   }
 }
 
+@variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 @layer base {
   body {
     color: var(--foreground);

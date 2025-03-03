@@ -16,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "SVETA - AI-Powered Business & Development Assistant",
-  description: "SVETA is an advanced AI designed to assist businesses, developers, and project managers by centralizing, analyzing, and automatically leveraging their business documents, functional analyses, and source code.",
+  description:
+    "SVETA is an advanced AI designed to assist businesses, developers, and project managers by centralizing, analyzing, and automatically leveraging their business documents, functional analyses, and source code.",
 };
 
 export default function RootLayout({
@@ -25,14 +26,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" data-theme="dark">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
         <Header />
-        <main className="flex-grow pt-16">
-          {children}
-        </main>
+        <main className="flex-grow pt-16 dark">{children}</main>
         <Footer />
       </body>
     </html>
