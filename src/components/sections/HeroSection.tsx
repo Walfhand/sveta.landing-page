@@ -11,11 +11,11 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative h-screen flex items-center overflow-hidden bg-gradient-to-br from-purple-50 via-white to-blue-50 dark:from-gray-900 dark:via-black dark:to-purple-900">
+    <section className="relative min-h-screen md:h-screen flex items-start md:items-center overflow-y-auto md:overflow-hidden bg-gradient-to-br from-purple-50 via-white to-blue-50 dark:from-gray-900 dark:via-black dark:to-purple-900">
       <BackgroundAnimation />
       <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white dark:from-black/0 dark:via-black/0 dark:to-black pointer-events-none" />
 
-      <div className="container relative mx-auto px-4 py-12 sm:py-32">
+      <div className="container relative mx-auto px-4 pt-24 pb-16 md:py-0">
         <div className="max-w-4xl mx-auto">
           <div
             className={`text-center transform transition-all duration-1000 ${
